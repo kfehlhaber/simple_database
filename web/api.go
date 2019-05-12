@@ -2,7 +2,7 @@ package web
 
 import (
 	"fmt"
-	"github.com/einride/pair-programming-kaj-fehlhaber/db"
+	"github.com/kejne/simple_database/db"
 	"net/http"
 )
 
