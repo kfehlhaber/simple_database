@@ -10,13 +10,11 @@ $(BUILD_TARGET):
 	go build -o $(BUILD_TARGET)
 
 test: $(BUILD_TARGET)
-	go test -cover github.com/einride/pair-programming-kaj-fehlhaber/db
+	go test -cover github.com/kejne/simple_database/db
 	./integration-tests.sh
 
 install:
-	go install github.com/einride/pair-programming-kaj-fehlhaber/web
-	go install github.com/einride/pair-programming-kaj-fehlhaber/db
-	go install github.com/einride/pair-programming-kaj-fehlhaber
+	go get
 
 clean:
 	-rm -r $(BUILD_DIR)
